@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Station Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🌦️ Weather Station Dashboard</h1>
+        
+        <!-- Device Status -->
+        <div class="card">
+            <h3>📡 Device Status</h3>
+            <div id="status" class="status">Checking...</div>
+        </div>
+        
+        <!-- Location & Weather -->
+        <div class="card location-info">
+            <h3>📍 Location & Weather</h3>
+            <div id="location">Getting location...</div>
+            <div id="location-accuracy" class="location-accuracy">GPS accuracy: --</div>
+            <div id="forecast">Loading weather...</div>
+            <div class="button-group">
+                <button onclick="refreshLocation()">🔄 Refresh Location</button>
+                <button onclick="getHighAccuracyLocation()">🎯 High Accuracy GPS</button>
+            </div>
+        </div>
+        
+        <!-- Sensor Data -->
+        <div class="sensor-grid">
+            <div class="card">
+                <h3>🌡️ Temperature</h3>
+                <div id="temp" class="sensor-value">--</div>
+                <div id="temp-time" class="sensor-time">--</div>
+            </div>
+            <div class="card">
+                <h3>💧 Humidity</h3>
+                <div id="hum" class="sensor-value">--</div>
+                <div id="hum-time" class="sensor-time">--</div>
+            </div>
+            <div class="card">
+                <h3>🌧️ Rainfall</h3>
+                <div id="rain" class="sensor-value">--</div>
+                <div id="rain-time" class="sensor-time">--</div>
+            </div>
+            <div class="card">
+                <h3>🌬️ Pressure</h3>
+                <div id="pressure" class="sensor-value">--</div>
+                <div id="pressure-time" class="sensor-time">--</div>
+            </div>
+            <div class="card">
+                <h3>☀️ Light</h3>
+                <div id="light" class="sensor-value">--</div>
+                <div id="light-time" class="sensor-time">--</div>
+            </div>
+        </div>
+
+        <!-- Debug Info (can be hidden in production) -->
+        <!-- <div class="card debug-info" id="debug-card" style="display: none;">
+            <h3>🔧 Debug Information</h3>
+            <div id="debug-info">
+                <div>Coordinates: <span id="debug-coords">--</span></div>
+                <div>GPS Accuracy: <span id="debug-accuracy">--</span></div>
+                <div>Location Method: <span id="debug-method">--</span></div>
+                <div>Last Update: <span id="debug-time">--</span></div>
+             </div>
+            <button onclick="toggleDebug()">Hide Debug</button>
+        </div>
+    </div> -->
+
+    <script src="js/script.js"></script>
+</body>
+</html>
