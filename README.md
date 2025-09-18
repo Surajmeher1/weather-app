@@ -1,7 +1,7 @@
-# Weather2 Dashboard
+# Weather-app Dashboard
 
 ## 📌 Overview
-Weather2 is a web-based dashboard that monitors IoT weather station sensor data (via **Blynk Cloud**) and displays real-time information such as temperature, humidity, and pressure.  
+Weather-app is a web-based dashboard that monitors IoT weather station sensor data (via **Blynk Cloud**) and displays real-time information such as temperature, humidity, and pressure.  
 It also provides **device online/offline detection** and **browser connection status** for reliable monitoring.
 
 ---
@@ -19,7 +19,7 @@ It also provides **device online/offline detection** and **browser connection st
 
 ## 📂 Project Structure
 ```
-weather2/
+weather-app/
 │── index.html        # Main webpage
 │── css/
 │   └── style.css     # Styling file
